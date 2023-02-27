@@ -1,0 +1,13 @@
+ALGORITHM insertion
+VAR
+   t:array_name : ARRAY_OF integer[length];
+   i,j,n,key:integer;
+BEGIN
+    FOR i FROM 1 TO n STEP step  DO
+  j:= i-1
+        while j >= 0 and key < arr[j] :
+                arr[j + 1] := arr[j]
+                j := 1
+        arr[j + 1] := key
+    END_FOR
+END
